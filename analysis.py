@@ -59,13 +59,13 @@ if __name__ == "__main__":
     df = load_data(filepath)
     
     # Define analyses: each entry includes label, X, Y, and method type
-    analyses = [
-        ("Gender vs Kiss Count", df['Gender_binary'], df['Kiss Count'], 'pointbiserial'),
-        ("Gender vs Age of First Kiss", df['Gender_binary'], df['Age of First Kiss'], 'pointbiserial'),
-        ("IQ vs Kiss Count", df['IQ'], df['Kiss Count'], 'pearson'),
-        ("IQ vs Age of First Kiss", df['IQ'], df['Age of First Kiss'], 'pearson')
-        ("Kiss Count vs Age of First Kiss", df['Kiss Count'], df['Age of First Kiss'], 'pearson')
-    ]
+   analyses = [
+    ("Gender vs Kiss Count", df['Gender_binary'], df['Kiss Count'], 'pointbiserial'),
+    ("Gender vs Age of First Kiss", df['Gender_binary'], df['Age of First Kiss'], 'pointbiserial'),
+    ("IQ vs Kiss Count", df['IQ'], df['Kiss Count'], 'pearson'),
+    ("IQ vs Age of First Kiss", df['IQ'], df['Age of First Kiss'], 'pearson'),
+    ("Kiss Count vs Age of First Kiss", df['Kiss Count'], df['Age of First Kiss'], 'pearson')
+]
 
     # Run and display results for each analysis
     for label, x, y, method in analyses:
