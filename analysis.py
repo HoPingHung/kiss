@@ -64,7 +64,7 @@ if __name__ == "__main__":
     ("Gender vs Age of First Kiss", df['Gender_binary'], df['Age of First Kiss'], 'pointbiserial'),
     ("IQ vs Kiss Count", df['IQ'], df['Kiss Count'], 'pearson'),
     ("IQ vs Age of First Kiss", df['IQ'], df['Age of First Kiss'], 'pearson'),
-    ("Kiss Count vs Age of First Kiss", df['Kiss Count'], df['Age of First Kiss'], 'pearson')
+    ("Kiss Count vs Age of First Kiss", df['Kiss Count'], df['Age of First Kiss'], 'pearson'),
 ]
 
     # Run and display results for each analysis
